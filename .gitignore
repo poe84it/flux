@@ -1,24 +1,64 @@
 /.phpunit.cache
 /bootstrap/ssr
+bootstrap/compiled.php
+
 /node_modules
+
+public_html/storage
+public_html/hot
+
 /public/build
 /public/hot
 /public/storage
+
 /storage/*.key
 /storage/pail
-/vendor
+
+app/storage/
+
+/vendor/
+
 .env
 .env.backup
 .env.production
+
 .phpactor.json
 .phpunit.result.cache
+
 Homestead.json
 Homestead.yaml
+
 npm-debug.log
 yarn-error.log
+
+/.vagrant
+
 /auth.json
+
+### Popular IDE
 /.fleet
 /.idea
 /.nova
-/.vscode
 /.zed
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# Local History for Visual Studio Code
+.history/
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# Ignore direnv
+.direnv
