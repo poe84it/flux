@@ -51,6 +51,19 @@ By providing an open-source solution, **Flux empowers businesses** to take full 
     npm install
     ```
 
+- Copy the `.env.sail.example` file to `.env` and configure your environment variables:
+
+    ```sh
+    cp .env.sail.example .env
+    ```
+
+    > **IMPORTANT:**  
+    > Don't forget to generate the Application Key. Run the following command:
+    >
+    > ```sh
+    > php artisan key:generate
+    > ```
+
 ### Installation
 
 ## Contributing
