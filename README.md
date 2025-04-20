@@ -33,7 +33,16 @@ By providing an open-source solution, **Flux empowers businesses** to take full 
 
 ### Prerequisites
 
+- PHP Composer & NodeJS
+
 ### Set up Development Environment
+
+- Install the project dependencies:
+
+    ```sh
+    composer install
+    npm install
+    ```
 
 ### Installation
 
