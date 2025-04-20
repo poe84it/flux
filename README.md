@@ -77,6 +77,38 @@ By providing an open-source solution, **Flux empowers businesses** to take full 
     > A permanent solution requires proper **web user configuration**, as detailed [here](http://fideloper.com/user-group-permissions-chmod-apache).  
     > This must be addressed before merging into `main`.
 
+### Running and Operating the Development Server with Sail
+
+- To build and run the Docker containers using `sail`:
+
+    ```sh
+    sail up
+    ```
+
+    Or use the `-d` flag to run it in the background:
+
+    ```sh
+    sail up -d
+    ```
+
+- To stop all Sail containers, use `Ctrl-C` if running in the foreground. If launched in the background or from another terminal, use:
+
+    ```sh
+    sail down
+    ```
+
+- To execute commands inside the running Sail container, prepend them with `sail`. For example:
+
+    ```sh
+    # Run database migrations
+    sail artisan migrate
+
+    # Start the Vite development server for frontend assets
+    sail npm run dev
+    ```
+
+For more information, visit the official [Laravel Sail Documentation](https://laravel.com/docs/12.x/sail).
+
 ### Installation
 
 ## Contributing
