@@ -105,6 +105,9 @@ By providing an open-source solution, **Flux empowers businesses** to take full 
 
     # Start the Vite development server for frontend assets
     sail npm run dev
+
+    # Run Feature and Unit tests
+    sail artisan test
     ```
 
 For more information, visit the official [Laravel Sail Documentation](https://laravel.com/docs/12.x/sail).
