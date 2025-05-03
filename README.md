@@ -65,6 +65,18 @@ By providing an open-source solution, **Flux empowers businesses** to take full 
     > php artisan key:generate
     > ```
 
+- Enable global write permissions for the `storage`, `public`, and `node_modules` directories:
+
+    ```sh
+    chmod o+w .
+    chmod o+w -R ./storage ./public ./node_modules
+    ```
+
+    > **WARNING:**  
+    > This is not secure. It's just a temporary workaround for development purposes to get started.  
+    > A permanent solution requires proper **web user configuration**, as detailed [here](http://fideloper.com/user-group-permissions-chmod-apache).  
+    > This must be addressed before merging into `main`.
+
 ### Installation
 
 ## Contributing
