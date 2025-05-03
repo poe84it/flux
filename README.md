@@ -35,6 +35,7 @@ By providing an open-source solution, **Flux empowers businesses** to take full 
 
 - Direnv and Nix package manager (for reproducible builds)
 - PHP Composer & NodeJS
+- Docker & Docker Compose installed
 
 ### Set up Development Environment
 
@@ -50,6 +51,66 @@ By providing an open-source solution, **Flux empowers businesses** to take full 
     composer install
     npm install
     ```
+
+- Copy the `.env.sail.example` file to `.env` and configure your environment variables:
+
+    ```sh
+    cp .env.sail.example .env
+    ```
+
+    > **IMPORTANT:**  
+    > Don't forget to generate the Application Key. Run the following command:
+    >
+    > ```sh
+    > php artisan key:generate
+    > ```
+
+- Enable global write permissions for the `storage`, `public`, and `node_modules` directories:
+
+    ```sh
+    chmod o+w .
+    chmod o+w -R ./storage ./public ./node_modules
+    ```
+
+    > **WARNING:**  
+    > This is not secure. It's just a temporary workaround for development purposes to get started.  
+    > A permanent solution requires proper **web user configuration**, as detailed [here](http://fideloper.com/user-group-permissions-chmod-apache).  
+    > This must be addressed before merging into `main`.
+
+### Running and Operating the Development Server with Sail
+
+- To build and run the Docker containers using `sail`:
+
+    ```sh
+    sail up
+    ```
+
+    Or use the `-d` flag to run it in the background:
+
+    ```sh
+    sail up -d
+    ```
+
+- To stop all Sail containers, use `Ctrl-C` if running in the foreground. If launched in the background or from another terminal, use:
+
+    ```sh
+    sail down
+    ```
+
+- To execute commands inside the running Sail container, prepend them with `sail`. For example:
+
+    ```sh
+    # Run database migrations
+    sail artisan migrate
+
+    # Start the Vite development server for frontend assets
+    sail npm run dev
+
+    # Run Feature and Unit tests
+    sail artisan test
+    ```
+
+For more information, visit the official [Laravel Sail Documentation](https://laravel.com/docs/12.x/sail).
 
 ### Installation
 
