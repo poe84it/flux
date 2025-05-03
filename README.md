@@ -29,19 +29,13 @@ Built with scalability and maintainability in mind, Flux enables small businesse
 This project was born out of a real need for **efficient order management** without relying on proprietary software or third-party services.  
 By providing an open-source solution, **Flux empowers businesses** to take full control of their workflow while ensuring sustainability and adaptability for future demands.
 
-<!-- 
 ## Getting Started
 
 ### Prerequisites
 
-- Docker & Docker Compose installed
-- Nix package manager (for reproducible builds)
-- MySQL/MariaDB database setup
+### Set up Development Environment
 
 ### Installation
-
-**TODO**
--->
 
 ## Contributing
 
