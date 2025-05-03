@@ -35,6 +35,7 @@ By providing an open-source solution, **Flux empowers businesses** to take full 
 
 - Direnv and Nix package manager (for reproducible builds)
 - PHP Composer & NodeJS
+- Docker & Docker Compose installed
 
 ### Set up Development Environment
 
