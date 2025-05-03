@@ -33,9 +33,16 @@ By providing an open-source solution, **Flux empowers businesses** to take full 
 
 ### Prerequisites
 
+- Direnv and Nix package manager (for reproducible builds)
 - PHP Composer & NodeJS
 
 ### Set up Development Environment
+
+- Enable `direnv`:
+
+    ```sh
+    direnv allow
+    ```
 
 - Install the project dependencies:
 
