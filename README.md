@@ -114,6 +114,8 @@ For more information, visit the official [Laravel Sail Documentation](https://la
 
 ### Installation
 
+*COMING SOON*
+
 ## Contributing
 
 Flux is open for collaboration!  
