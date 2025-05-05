@@ -122,6 +122,11 @@ Flux is open for collaboration!
 Contributions are welcome in the form of bug reports, feature requests, and code improvements.  
 Simply submit a **Pull Request** or start a discussion in **Issues**.
 
+### Roadmap
+
+To get an overview of the project's current development stages and future goals, check out our [Roadmap](./docs/roadmap.md).  
+The roadmap outlines the features and milestones planned for upcoming releases.
+
 ## License
 
 This project is licensed under the **GNU Affero General Public License (AGPLv3)** — ensuring that all modifications and deployments remain open-source.  
